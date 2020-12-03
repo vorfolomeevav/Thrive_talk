@@ -1,0 +1,16 @@
+@import "utils";
+@import "fonts";
+@import "reset";
+@import "container";
+@import "./header/header.scss";
+@import "./header/intro.scss";
+@import "./main/why-thrive.scss";
+@import "./main/about.scss";
+@import "./main/services.scss";
+@import "./main/activities.scss";
+@import "./main/activity-cards.scss";
+
+body {
+  font-family: "Larsseit", sans-serif;
+  background: $yellow;
+}
