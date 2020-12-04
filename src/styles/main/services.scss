@@ -22,18 +22,62 @@
 
     &--pink {
       background-color: $pink;
+
+      background-position: -110px 0;
+      transition: background-position 1s ease-in-out,
+        background-image 1s ease-in-out,
+        background-color 0.5s;
+
+      &:hover {
+        background-color: rgba(255, 226, 222, 0.7);
+        background-position: 0 0;
+        background-image: url(../images/nutrition.png);
+      }
     }
 
     &--lightgreen {
       background-color: $lightgreen;
+
+      background-position: -110px 0;
+      transition: background-position 1s ease-in-out,
+        background-image 1s ease-in-out,
+        background-color 1s;
+
+      &:hover {
+        background-color: rgba(196, 231, 105, 0.6);
+        background-position: 0 0;
+        background-image: url(../images/nutrition.png);
+      }
     }
 
     &--ligthblue {
       background-color: $lightblue;
+
+      background-position: -110px 0;
+      transition: background-position 1s ease-in-out,
+        background-image 1s ease-in-out,
+        background-color 1s;
+
+      &:hover {
+        background-color: rgba(98, 208, 223, 0.5);
+        background-position: 0 0;
+        background-image: url(../images/nutrition.png);
+      }
     }
 
     &--blue {
       background-color: $blue;
+
+      background-position: -110px 0;
+      transition: background-position 1s ease-in-out,
+        background-image 1s ease-in-out,
+        background-color 1s;
+
+      &:hover {
+        background-color: rgba(0, 82, 193, 0.5);
+        background-position: 0 0;
+        background-image: url(../images/nutrition.png);
+      }
     }
   }
 
