@@ -9,13 +9,26 @@
     padding: 27px 179px 0;
     align-items: baseline;
     height: 77px;
+
+    @media (max-width: $laptop-width) {
+      padding: 27px 50px;
+    }
+
+    @media (max-width: $tablet-width) {
+      padding: 0 30px;
+    }
+
+    @media (max-width: $phone-width) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__title {
+    margin-left: -10px;
     padding: 10px;
     font-size: 24px;
     line-height: 1.12em;
-    // letter-spacing: -0.04em;
     font-weight: bold;
     color: $lightblue;
   }
@@ -40,6 +53,11 @@
       background-color: $white;
       border-color: $lightblue;
       color: $lightblue;
+    }
+
+    @media (max-width: $phone-width) {
+      margin-top: 20px;
+      padding: 10px;
     }
   }
 }

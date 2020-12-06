@@ -2,15 +2,21 @@
   position: relative;
   display: flex;
   justify-content: center;
-  align-items: center;
   padding: 150px 424px 76px;
   background-color: $white;
+
+  @media (max-width: 1300px) {
+    padding: 150px 0 76px;
+  }
+
+  @media (max-width: $phone-width) {
+    padding: 150px 20px 76px;
+  }
 
   &__content {
     font-size: 24px;
     font-weight: bold;
     line-height: 1.4em;
-    // letter-spacing: 0.1em;
     color: $darkblue;
   }
 
@@ -21,6 +27,26 @@
     font-size: 16px;
     font-weight: medium;
     text-transform: uppercase;
-    // letter-spacing: 0.06em;
+
+    @media (max-width: 1300px) {
+      top: 100px;
+      left: 50%;
+      transform: translate(-50%);
+    }
+
+    @media (max-width: $phone-width) {
+      font-size: 24px;
+    }
+  }
+
+  &__text {
+    @media (max-width: 1300px) {
+      width: 400px;
+    }
+
+    @media (max-width: $phone-width) {
+      width: 300px;
+      font-size: 16px;
+    }
   }
 }
