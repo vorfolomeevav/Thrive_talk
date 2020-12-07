@@ -135,12 +135,19 @@
     }
 
     &:hover {
-      color: $lightblue;
+      font-weight: bold;
+      color: $darkblue;
+      @media (max-width: $tablet-width) {
+        color: $lightblue;
+      }
 
       &::after {
         width: 100%;
         left: 0;
-        background: $lightblue;
+        background: $darkblue;
+        @media (max-width: $tablet-width) {
+          background: $lightblue;
+        }
       }
     }
   }

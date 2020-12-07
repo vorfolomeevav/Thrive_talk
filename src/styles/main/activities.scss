@@ -43,6 +43,7 @@
       background-image: url("../images/nutrition.png");
       background-repeat: no-repeat;
       background-size: cover;
+      @include activity-color;
     }
 
     &--lightblue {
